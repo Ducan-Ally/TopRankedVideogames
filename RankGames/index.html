@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width = device-width, user-scalable =0, initial-scale = 1.0, minimum-scale = 1.0" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+     <header>
+       <nav class="navbar navbar-inverse  ">
+         <div class="container-fluid">
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span></a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                  <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                </div>
+            </div>
+
+         <!-- -->
+       </nav>
+     </header>
+
+     <div class="jumbotron text-center">
+       <h1>GameRank</h1>
+       <p>Vota por tu juego favorito</p>
+     </div>
+     <!--
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="">The Witcher 3</h3>
+                <img src="images/image.jpg" width="200" height="200" alt="twitter" class="img-circle">
+            </div>
+            <div class="col-sm-4">
+                <h3>Zelda Ocarina of Time</h3>
+                <img src="images/zelda.jpg" width="200" height = "200" alt="twitter" class="img-circle">
+            </div>
+            <div class="col-sm-4">
+                <h3>Skyrim</h3>
+                <img src="images/skyrim.jpg"  width="200" height = "200" alt="twitter" class="img-circle">
+            </div>
+        </div>
+      </div>
+    -->
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-4 ">
+            <div class="thumbnail">
+                <img src="images/image.jpg"alt="..." width="250" height="250">
+                    <div class="caption">
+                    <h3>The Witcher</h3>
+                    <p>...</p>
+                    <p><button id="01"href="#"  onclick="RecibirVoto(0)" class="btn btn-primary" role="button">Rank</button></p>
+                    </div>
+            </div>
+        </div>
+        <div class = "col-sm-3 col-md-4">
+              <div class="thumbnail">
+                <img  src="images/zelda.jpg" alt="..." width="250" height="250">
+                    <div class="caption">
+                    <h3>Zelda Ocarina of Time</h3>
+                    <p>...</p>
+                    <p><button id="02"href="#" onclick="RecibirVoto(1)"  class="btn btn-primary" role="button">Rank</button></p>
+                    </div>
+            </div>
+        </div>
+        <div class = "col-sm-3 col-md-4">
+              <div class="thumbnail">
+                <img  width="250" height="250"src="images/zelda.jpg" alt="...">
+                    <div class="caption">
+                    <h3>TES Skyrim</h3>
+                    <p>...</p>
+                    <p><button id="03" onclick="RecibirVoto(2)"  href="#" class="btn btn-primary" role="button">Rank</button></p>
+                    </div>
+            </div>
+        </div>
+
+
+
+      </div>
+</div>
+<!-- Tabla de Puntuaciones -->
+  <div class="container">
+    <div class="table-responsive">
+        <table id="tablaPunt" class="table table-hover">
+            <tr> <!-- 1era Fila -->
+                <th>Game</th>
+                <th>Votos Recibidos</th>
+            </tr>
+        </table>
+        <!--
+          Notas sobre las tablas:
+            <tr> Table Row | Filas
+            <th> Table head | Los encabezados
+            <td> Como el cuerpo de la tabla
+        -->
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="jquery.js"> </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
